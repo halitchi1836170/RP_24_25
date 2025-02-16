@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/lattinone/Desktop/ANDREI/RP_24_25/4_esercizi_rp_02/src/linalg/mat_f.cpp
+mat_f.h
+/home/lattinone/Desktop/ANDREI/RP_24_25/4_esercizi_rp_02/src/linalg/mat_f.h
+assert.h
+-
+iostream
+-
+
+/home/lattinone/Desktop/ANDREI/RP_24_25/4_esercizi_rp_02/src/linalg/mat_f.h
+vec_f.h
+/home/lattinone/Desktop/ANDREI/RP_24_25/4_esercizi_rp_02/src/linalg/vec_f.h
+
+/home/lattinone/Desktop/ANDREI/RP_24_25/4_esercizi_rp_02/src/linalg/vec_f.h
+iostream
+-
+

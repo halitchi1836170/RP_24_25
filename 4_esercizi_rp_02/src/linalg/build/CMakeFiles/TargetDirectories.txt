@@ -1,0 +1,6 @@
+/home/lattinone/Desktop/ANDREI/RP_24_25/4_esercizi_rp_02/src/linalg/build/CMakeFiles/rebuild_cache.dir
+/home/lattinone/Desktop/ANDREI/RP_24_25/4_esercizi_rp_02/src/linalg/build/CMakeFiles/edit_cache.dir
+/home/lattinone/Desktop/ANDREI/RP_24_25/4_esercizi_rp_02/src/linalg/build/CMakeFiles/mat_f_test.dir
+/home/lattinone/Desktop/ANDREI/RP_24_25/4_esercizi_rp_02/src/linalg/build/CMakeFiles/vec_f_test.dir
+/home/lattinone/Desktop/ANDREI/RP_24_25/4_esercizi_rp_02/src/linalg/build/CMakeFiles/mat_f_library.dir
+/home/lattinone/Desktop/ANDREI/RP_24_25/4_esercizi_rp_02/src/linalg/build/CMakeFiles/vec_f_library.dir
