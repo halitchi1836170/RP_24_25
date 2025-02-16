@@ -8,6 +8,6 @@ RUN apt-get update && \
     apt-get clean && rm -rf /var/lib/apt/lists/*
 
 
-copy ./ /app/intro
+copy ./ /app/intro_1
 
 CMD ["/bin/bash"]
