@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/lattinone/Desktop/ANDREI/RP_24_25/declarations_and_definitions_3/declaration.h
+
+/home/lattinone/Desktop/ANDREI/RP_24_25/declarations_and_definitions_3/definition.cpp
+iostream
+-
+
+/home/lattinone/Desktop/ANDREI/RP_24_25/declarations_and_definitions_3/main.cpp
+iostream
+-
+declaration.h
+/home/lattinone/Desktop/ANDREI/RP_24_25/declarations_and_definitions_3/declaration.h
+

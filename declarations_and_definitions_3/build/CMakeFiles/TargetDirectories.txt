@@ -1,0 +1,3 @@
+/home/lattinone/Desktop/ANDREI/RP_24_25/declarations_and_definitions_3/build/CMakeFiles/rebuild_cache.dir
+/home/lattinone/Desktop/ANDREI/RP_24_25/declarations_and_definitions_3/build/CMakeFiles/edit_cache.dir
+/home/lattinone/Desktop/ANDREI/RP_24_25/declarations_and_definitions_3/build/CMakeFiles/declarations_and_definitions_3.dir
