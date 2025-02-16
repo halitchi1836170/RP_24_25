@@ -7,7 +7,7 @@ int main(){
 
     CIAO1();
 
-    cout << "-------PAUSA-------" << endl;
+    cout << "-------PAUSA / PROVA NUOVO COMMIT DA VSC-------" << endl;
 
     CIAO2();
 
