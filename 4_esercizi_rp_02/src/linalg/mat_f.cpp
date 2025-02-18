@@ -65,8 +65,10 @@ const float& MatF::at(int r, int c) const {
 
 // op =, deep copy
 MatF& MatF::operator =(const MatF& other) {
-  // TODO: fillme
-
+  assert(dimension==other.dimension && "dim mismatch");
+  for(int i=0;i<dimension;++i){
+    v[i]=other.v[i];
+  }
   return *this;
 }
 
@@ -74,29 +76,40 @@ MatF& MatF::operator =(const MatF& other) {
 MatF MatF::operator +(const MatF& other) const {
   assert (other.cols==cols && other.rows==rows && "dim mismatch");
   MatF returned (*this);
-
-  // TODO: fillme
-
+  for(int i=0;i<dimension;++i){
+    returned.v[i]=v[i]+other.v[i];
+  }
   return returned;
 }
 
 // returns the difference this - other
 MatF MatF::operator -(const MatF& other) const {
-
-  // TODO: fillme
-
+  assert (other.cols==cols && other.rows==rows && "dim mismatch");
+  MatF returned (*this);
+  for(int i=0;i<dimension;++i){
+    returned.v[i]=v[i]-other.v[i];
+  }
 }  
 
 // returns this*f
 MatF MatF::operator* (float f) const {
-  // TODO: fillme
+  for(int i=0;i<dimension;++i){
+    v[i]=(float)v[i]*f;
+  }
 }
 
 // returns this * other
 VecF MatF::operator *(const VecF& other) const {
   assert(other.dim==cols && "dim mismatch");
   VecF returned (rows);
-  // TODO: fillme
+  float cumulativeSum;
+  for(int i=0; i<rows;++i){
+    cumulativeSum=(float)0;
+    for(int j=0; j<cols;++j){
+      cumulativeSum+=v[i*cols+j]*other.v[j];
+    }
+    returned.v[i]=cumulativeSum;
+  }
   return returned;
 }
 
@@ -104,7 +117,18 @@ VecF MatF::operator *(const VecF& other) const {
 MatF MatF::operator *(const MatF& other) const {
   assert(cols==other.rows && "dimension mismatch");
   MatF returned(rows, other.cols);
-  //TODO: fillme
+  float cumulativeSum; 
+  
+  for (int i = 0; i < rows; ++i) {
+    for (int j = 0; j < other.cols; ++j) {
+      float cumulativeSum = (float)0;
+      for (int k = 0; k < cols; ++k) {
+        cumulativeSum += v[i * cols + k] * other.v[k * other.cols + j];
+      }
+      returned.v[i * other.cols + j] = cumulativeSum;
+    }
+  }
+
   return returned;
 }
 

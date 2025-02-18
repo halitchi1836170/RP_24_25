@@ -1,9 +1,7 @@
 #include "btree.h"
 
 
-TreeNodeInt::TreeNodeInt(int value_,
-                         TreeNodeInt* left_,
-                         TreeNodeInt* right_):
+TreeNodeInt::TreeNodeInt(int value_,TreeNodeInt* left_,TreeNodeInt* right_):
   value(value_),
   left(left_),
   right(right_){}
